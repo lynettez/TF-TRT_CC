@@ -12,7 +12,7 @@ This example can be built by Bazel with TensorFlow Source.\
 Please follow the https://www.tensorflow.org/install/source to install Bazel and clone the TF Source.\
 Make sure you checkout the branch to **r1.14**
 
-Run configure before the fisrt time of using bazel build. \In this case, you should choose 'y' for the oprions related 'CUDA' and "TensorRT" during the configuration.
+Run configure before the fisrt time of using bazel build. \In this case, you should choose 'y' for the options related 'CUDA' and "TensorRT" during the configuration.
 ```
 cd tensorflow
 ./configure
