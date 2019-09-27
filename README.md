@@ -15,7 +15,7 @@ Make sure you checkout the branch to **r1.14**
 Run configure before the fisrt time of using bazel build. \In this case, you should choose 'y' for the oprions related 'CUDA' and "TensorRT" during the configuration.
 ```
 cd tensorflow
-./Configure
+./configure
 ```
 
 Copy 'example' folder to /tensorflow/cc/. \
