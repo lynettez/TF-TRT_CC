@@ -8,17 +8,17 @@ Verified with:
 4. Bazel 0.25.3
 5. JDK 11
 
-This example can be built by Bazel with TensorFlow Source.
-Please follow the https://www.tensorflow.org/install/source to install Bazel and clone the TF Source.
-Make sure you checkout the branch to **r1.14**
+This example can be built by Bazel with TensorFlow Source.\
+Please follow the https://www.tensorflow.org/install/source to install Bazel and clone the TF Source.\
+Make sure you checkout the branch to **r1.14**\
 
-Run configure setup before the fisrt time of using bazel build. In this case, you should choose 'y' for the oprions related 'CUDA' and "TensorRT" during the condfiguration
+Run configure before the fisrt time of using bazel build. \In this case, you should choose 'y' for the oprions related 'CUDA' and "TensorRT" during the configuration.\
 ```
 cd tensorflow
 ./Configure
 ```
 
-Copy 'example' folder to /tensorflow/cc/.
+Copy 'example' folder to /tensorflow/cc/. \
 Build the CC example, the first build would take about several hours.
 ```
 bazel build --config=opt  --config=cuda //tensorflow/cc/example:example --cxxopt="-D_GLIBCXX_USE_CXX11_ABI=0" --verbose_failures
