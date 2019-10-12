@@ -24,9 +24,9 @@ Build the CC example, the first build would take about several hours.
 bazel build --config=opt  --config=cuda //tensorflow/cc/example:example --cxxopt="-D_GLIBCXX_USE_CXX11_ABI=0" --verbose_failures
 ```
 
-Trigger the converter to optimize the graph.
+Modify the input info of your network in head of test.cc. Trigger the converter to optimize the graph and run inference with input image.
 ```
-./bazel-bin/tensorflow/cc/example/example tensorflow/cc/example/mnist_frozen_graph.pb ArgMax,Softmax
+./bazel-bin/tensorflow/cc/example/example tensorflow/cc/example/mnist_frozen_graph.pb ArgMax,Softmax PATH_TO_INPUT_IMAGE
 ```
 
 If you want to see more INFO TF logs, you may
